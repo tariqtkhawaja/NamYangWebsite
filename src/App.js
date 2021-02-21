@@ -1,26 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import { Button } from './components/button';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p className="adam">Adam has a big willy</p>
-        <p>8========3</p>
+      <header>
+        <h2> Nam Yang Worthing Community Association</h2>
+        <nav>
+          <Button 
+            label="Homepage"
+            value={1}
+          /> 
+         <Button 
+          label="About us"
+          value={2}/>
+          <Button 
+            label="Timetable"
+            value={3}
+          />
+          <Button 
+        label="Contact us"
+        value={4}
+      />
+        
+
+        </nav>
 
       </header>
+      <div className="app-body">
+        <p className="adam">Adam has a big willy</p>
+        <p>8============3---o</p>
+        <p>8============3---o</p>
+        <p className="adam">Adam has a big willy</p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        <p> 8============3---o </p>
+        
+      </div>
     </div>
   );
 }
