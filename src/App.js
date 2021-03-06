@@ -1,51 +1,49 @@
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
 import './App.css';
-import { Button } from './components/button';
+import { Homepage } from './pages/homepage';
+import { AboutUs } from './pages/about_us';
+import { Timetable } from './pages/timetable';
+import { ContactUs } from './pages/contact_us';
 
 function App() {
   return (
     <div className="App">
       <header>
         <h2> Nam Yang Worthing Community Association</h2>
-        <nav>
-          <Button 
-            label="Homepage"
-            value={1}
-          /> 
-         <Button 
-          label="About us"
-          value={2}/>
-          <Button 
-            label="Timetable"
-            value={3}
-          />
-          <Button 
-        label="Contact us"
-        value={4}
-      />
-        
-
-        </nav>
-
+        <Router>
+          <nav>
+            <Link to="/">Homepage</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/timetable">Timetable</Link>
+            <Link to="/contact">Contact Us</Link>
+          </nav>
+          <Switch>
+            <div className="app-body">
+              <Route path='/'>
+                <Homepage />
+              </Route>
+              <Route path='/about'>
+                <AboutUs />
+              </Route>
+              <Route path='/timetable'>
+                <Timetable />
+              </Route>
+              <Route path='/contact'>
+                <ContactUs />
+              </Route>
+            </div>
+          </Switch>
+        </Router>
       </header>
-      <div className="app-body">
-        <p className="adam">Adam has a big willy</p>
-        <p>8============3---o</p>
-        <p>8============3---o</p>
-        <p className="adam">Adam has a big willy</p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        <p> 8============3---o </p>
-        
-      </div>
+
     </div>
   );
 }
