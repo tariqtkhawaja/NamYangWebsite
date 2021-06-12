@@ -6,17 +6,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 
 .App header {
   background-color: #fbb034;
   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
-  margin-top: 100px;
   position: sticky;
-  top: 0;
-  border: solid 2px red;  
+  top: 0;  
 }
 
 .app-body {
@@ -24,4 +21,18 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+}
+
+.nav-bar a:hover {
+  color: white;
+}
+
+.nav-bar a.nav-link-active {
+  color: white;
 }

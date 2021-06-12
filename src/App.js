@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 
 
@@ -19,17 +19,21 @@ function App() {
       <header>
         <h2> Nam Yang Worthing Community Association</h2>
         <Router>
-          <nav>
-            <Link to="/">Homepage</Link>
-            <Link to="/about">About us</Link>
-            <Link to="/timetable">Timetable</Link>
-            <Link to="/contact">Contact Us</Link>
+          <nav className="nav-bar">
+            <NavLink
+              className="nav-link" 
+              activeClassName="nav-link-active" 
+              exact 
+              to="/"
+            >
+              Homepage
+            </NavLink>
+            <NavLink activeClassName="nav-link-active" to="/about">About us</NavLink>
+            <NavLink activeClassName="nav-link-active" to="/timetable">Timetable</NavLink>
+            <NavLink activeClassName="nav-link-active" to="/contact">Contact Us</NavLink>
           </nav>
           <Switch>
             <div className="app-body">
-              <Route path='/'>
-                <Homepage />
-              </Route>
               <Route path='/about'>
                 <AboutUs />
               </Route>
@@ -38,6 +42,9 @@ function App() {
               </Route>
               <Route path='/contact'>
                 <ContactUs />
+              </Route>
+              <Route exact path='/'>
+                <Homepage />
               </Route>
             </div>
           </Switch>
@@ -49,3 +56,4 @@ function App() {
 }
 
 export default App;
+

@@ -14,11 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -29,42 +24,29 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## The Process
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I set out to create a simple website for the Worthing branch of my kickboxing club - Nam Yang Brighton. I did this because I wanted to help out my club with the launch of their new site. But also because I saw it as an opportunity to have a project where I could get to grips with certain tools I wanted to use. It felt like a useful exchange and a project I could really learn from. The goal of the project was to have a simple website made up of 4 pages. A homepage, About us, Timetable and a Contact us page. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+One of the things that I got to grips with was understanding how props work in react. This took some time to understand that whilst props could be called anything when using them, it makes sense to use specific words when defining them. This makes my code more legible and specific for anyone that might read or review it. I worked through this by working out the `Button` component.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## The Tools
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For this project the tools I used were: 
+- create-react-app
+- react
+- classnames
+- trello 
 
-## Learn More
+React was something I wanted to learn because it seemed like a cool tool to build websites with, My friend who's a front-end developer reccomended it might be a good place for me to play around in and utilise knowledge that I've been learning through my html and javascript courses. I also wanted to gain expierence with different packages. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I found using jsx similar to html, which made the language a bit more familiar and less daunting. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The react router implementation was one of the hardest parts of this project. I did some reading through the react router documentation and this helped me figure some things out however next time I think I would look up some more tutorials and presentations on implementing react router to get more familiar with it. 
 
-### Code Splitting
+## To Do 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Look into the best way to implement a Timetable on the 'Timetable' page. 
+2. Execute the timetable implementation. 
+3. Look into the best way to implement a google map in the 'Contact Us' page. 
+4. Execute the google map implementation. 

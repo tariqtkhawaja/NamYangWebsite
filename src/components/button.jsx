@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 export class Button extends Component {
-    handleClick = (literallyAnything) => {
-        console.log(literallyAnything)
+    handleClick = (buttonValue) => {
+        console.log(buttonValue)
     }
 
     render() {
