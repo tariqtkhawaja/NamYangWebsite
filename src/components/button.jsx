@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 
 export class Button extends Component {
+    state = {
+        hasBeenPressed: false,
+    }
+
     handleClick = (buttonValue) => {
+        this.setState({ hasBeenPressed: true });
         console.log(buttonValue)
     }
 

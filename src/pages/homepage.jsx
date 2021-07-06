@@ -5,7 +5,7 @@ export class Homepage extends Component {
     return (
       <div>
         Homepage1
-      </div>
+       </div>
     )
   }
 }

@@ -33,7 +33,7 @@ One of the things that I got to grips with was understanding how props work in r
 ## The Tools
 
 For this project the tools I used were: 
-- create-react-app
+- create-react-ap
 - react
 - classnames
 - trello 
