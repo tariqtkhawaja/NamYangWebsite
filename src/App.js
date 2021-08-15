@@ -16,14 +16,14 @@ import { ContactUs } from './pages/contact_us';
 function App() {
   return (
     <div className="App">
-      <header>
-        <h2> Nam Yang Worthing Community Association</h2>
-        <Router>
+      <Router>
+        <header>
+          <h2> Nam Yang Worthing Community Association</h2>
           <nav className="nav-bar">
             <NavLink
-              className="nav-link" 
-              activeClassName="nav-link-active" 
-              exact 
+              className="nav-link"
+              activeClassName="nav-link-active"
+              exact
               to="/"
             >
               Homepage
@@ -32,24 +32,24 @@ function App() {
             <NavLink activeClassName="nav-link-active" to="/timetable">Timetable</NavLink>
             <NavLink activeClassName="nav-link-active" to="/contact">Contact Us</NavLink>
           </nav>
-          <Switch>
-            <div className="app-body">
-              <Route path='/about'>
-                <AboutUs />
-              </Route>
-              <Route path='/timetable'>
-                <Timetable />
-              </Route>
-              <Route path='/contact'>
-                <ContactUs />
-              </Route>
-              <Route exact path='/'>
-                <Homepage />
-              </Route>
-            </div>
-          </Switch>
-        </Router>
-      </header>
+        </header>
+        <Switch>
+          <div className="app-body">
+            <Route path='/about'>
+              <AboutUs />
+            </Route>
+            <Route path='/timetable'>
+              <Timetable />
+            </Route>
+            <Route path='/contact'>
+              <ContactUs />
+            </Route>
+            <Route exact path='/'>
+              <Homepage />
+            </Route>
+          </div>
+        </Switch>
+      </Router>
 
     </div>
   );
