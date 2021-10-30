@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Jost');
+@import url("https://fonts.googleapis.com/css?family=Jost");
+
+* {
+  --yellow: #fbb034;
+  --black: #0b0a07;
+}
 
 .App {
   background-color: #fbb034;
@@ -12,10 +17,10 @@
 }
 
 .App header {
-  background-color:transparent;
+  background-color: transparent;
   background-image: none;
   position: sticky;
-  top: 0;  
+  top: 0;
 }
 
 .app-body {
@@ -26,11 +31,10 @@
   color: #61dafb;
 }
 
-
 .nav-bar a {
   text-decoration: none;
   margin-right: 10px;
-  color: black;
+  color: var(--black);
 }
 
 .nav-bar a:hover {
@@ -41,6 +45,48 @@
   color: white;
 }
 
-h1, h2, h3, h4, p, strong { 
-  font-family: 'Jost'
+h1,
+h2,
+h3,
+h4,
+p,
+strong {
+  font-family: "Jost";
+}
+
+.timetable-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border: solid 5px var(--black);
+}
+
+.item {
+  border: dotted 1px var(--black);
+  background-color: var(--yellow);
+}
+.item10 {
+  grid-row: span 2;
+}
+.item13 {
+  grid-row: span 2;
+}
+
+.item21 {
+  grid-row: span 2;
+}
+.item79 {
+  grid-row: span 2;
+}
+.item80 {
+  grid-row: span 2;
+}
+.item81 {
+  grid-row: span 2;
+}
+.item101 {
+  grid-row: span 3;
+}
+
+.item103 {
+  grid-row: span 3;
 }

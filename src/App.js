@@ -14,12 +14,24 @@ import { Timetable } from './pages/timetable';
 import { ContactUs } from './pages/contact_us';
 
 function App() {
+  const nav = document.querySelector('#main');
+  const topOfNav = nav.offSetTop;
+
+  function fixNav() {
+    if (window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
   return (
     <div className="App">
       <Router>
-        <header>
+        <header id="main">
           <h2> Nam Yang Worthing Community Association</h2>
-          <nav className="nav-bar">
+          <nav className="nav-bar" >
             <NavLink
               className="nav-link"
               activeClassName="nav-link-active"
