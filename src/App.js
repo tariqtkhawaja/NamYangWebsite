@@ -12,25 +12,16 @@ import { Homepage } from './pages/homepage';
 import { AboutUs } from './pages/about_us';
 import { Timetable } from './pages/timetable';
 import { ContactUs } from './pages/contact_us';
+import { Button } from "./components/button";
+import { SignUp } from './components/signupbtn/sign_up';
+import Logo from './Images/NAMYANGLogo.png'
 
 function App() {
-  const nav = document.querySelector('#main');
-  const topOfNav = nav.offSetTop;
-
-  function fixNav() {
-    if (window.scrollY >= topOfNav) {
-      document.body.style.paddingTop = nav.offsetHeight + 'px';
-      document.body.classList.add('fixed-nav');
-    } else {
-      document.body.style.paddingTop = 0;
-      document.body.classList.remove('fixed-nav');
-    }
-  }
+  const navbar = document.querySelector('#main');
   return (
     <div className="App">
       <Router>
         <header id="main">
-          <h2> Nam Yang Worthing Community Association</h2>
           <nav className="nav-bar" >
             <NavLink
               className="nav-link"
@@ -38,11 +29,18 @@ function App() {
               exact
               to="/"
             >
-              Homepage
+              <img
+                input
+                type="image"
+                className="fit-logo"
+                src={Logo}
+                alt="Nam Yang Brighton Community Association"
+              ></img>
             </NavLink>
             <NavLink activeClassName="nav-link-active" to="/about">About us</NavLink>
             <NavLink activeClassName="nav-link-active" to="/timetable">Timetable</NavLink>
             <NavLink activeClassName="nav-link-active" to="/contact">Contact Us</NavLink>
+            <NavLink activeClassName="nav-link-active" to="/sign-up"><Button>Sign Up</Button></NavLink>
           </nav>
         </header>
         <Switch>
@@ -55,6 +53,9 @@ function App() {
             </Route>
             <Route path='/contact'>
               <ContactUs />
+            </Route>
+            <Route path='/sign-up'>
+              <SignUp />
             </Route>
             <Route exact path='/'>
               <Homepage />

@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Jost");
 
 * {
-  --yellow: #fbb034;
+  --yellow: #febb26;
   --black: #0b0a07;
+  --white: #f2f7f2;
+  --gray: #dfdcdc;
 }
 
 .App {
-  background-color: #fbb034;
-  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  background-color: #febb26;
+  background-image: linear-gradient(315deg, #febb26 0%, #ffdd00 74%);
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -25,12 +27,26 @@
 
 .app-body {
   overflow-y: hidden;
+  padding: 50px;
 }
 
 .App-link {
   color: #61dafb;
 }
+.fit-logo {
+  height: 150px;
+  width: 200px;
+  left: 0px;
+}
 
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--yellow);
+  /* background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
+  width: 100vw;
+}
 .nav-bar a {
   text-decoration: none;
   margin-right: 10px;
@@ -62,7 +78,7 @@ strong {
 
 .item {
   border: dotted 1px var(--black);
-  background-color: var(--yellow);
+  background-color: none;
 }
 .item10 {
   grid-row: span 2;
