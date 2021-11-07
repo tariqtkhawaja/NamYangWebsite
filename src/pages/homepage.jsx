@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import NamYangWorthing from "../Images/NAMYANGWorthing.jpg";
 
 export class Homepage extends Component {
   render() {
@@ -44,6 +45,15 @@ export class Homepage extends Component {
               only allowed to kick with the foot and not the shin.
             </p>
           </p>
+          <img
+            input
+            type="image"
+            className="fit-picture"
+            src={NamYangWorthing}
+            alt="picture of the Nam Yang Worthing Gym"
+            width="840px"
+            height="auto"
+          />
         </div>
       </div>
     );

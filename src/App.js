@@ -55,7 +55,6 @@ function App() {
               <ContactUs />
             </Route>
             <Route path='/sign-up'>
-              <SignUp />
             </Route>
             <Route exact path='/'>
               <Homepage />
