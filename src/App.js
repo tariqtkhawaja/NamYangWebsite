@@ -63,6 +63,9 @@ function App() {
         </Switch>
       </Router>
 
+      <footer>
+        
+      </footer>
     </div>
   );
 }
