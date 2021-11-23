@@ -17,7 +17,7 @@ function Map() {
       <Marker
         name="Nam Yang Worthing"
         position={{ lat: 50.823212, lng: -0.35754 }}
-        onClick={InfoWindowComponent.toggleOpen} 
+        onClick={InfoWindow.toggleOpen}
       >
         <InfoWindowComponent />
       </Marker>

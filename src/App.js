@@ -5,8 +5,8 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-
-
+import { FaInstagram } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi"
 import './App.css';
 import { Homepage } from './pages/homepage';
 import { AboutUs } from './pages/about_us';
@@ -14,7 +14,8 @@ import { Timetable } from './pages/timetable';
 import { ContactUs } from './pages/contact_us';
 import { Button } from "./components/button";
 import { SignUp } from './components/signupbtn/sign_up';
-import Logo from './Images/NAMYANGLogo.png'
+
+import Logo from './Images/NAMYANGLogo.png';
 
 function App() {
   const navbar = document.querySelector('#main');
@@ -64,9 +65,23 @@ function App() {
       </Router>
 
       <footer>
-        
+        <div className="footer-wrapper">
+          <span>
+            All rights reserved  © Nam Yang Brighton Community Association 2021
+            <br>
+            </br>
+
+
+            <a href="https://www.instagram.com/namyangbrighton/"><FaInstagram />
+              @namyangbrighton</a>
+            <p>
+              <HiOutlineMail /> info@namyangbrighton.co.uk
+            </p>
+          </span>
+
+        </div>
       </footer>
-    </div>
+    </div >
   );
 }
 
