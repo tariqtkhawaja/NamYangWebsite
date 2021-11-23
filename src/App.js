@@ -72,8 +72,7 @@ function App() {
             </br>
 
 
-            <a href="https://www.instagram.com/namyangbrighton/"><FaInstagram />
-              @namyangbrighton</a>
+            <a href="https://www.instagram.com/namyangbrighton/"> <FaInstagram /> @namyangbrighton</a>
             <p>
               <HiOutlineMail /> info@namyangbrighton.co.uk
             </p>

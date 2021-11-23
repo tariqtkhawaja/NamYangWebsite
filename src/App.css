@@ -108,6 +108,11 @@ strong {
   grid-row: span 3;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
 /* Media Queries */
 /* @media screen and (max-width: 600px) {
   .App {
